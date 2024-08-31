@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meow Minds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            background-color: #12141d;
+        }
+
+       .header {
+            background-color: #333;
+            color: white;
+            padding: 15px; 
+            position: relative;
+            text-align: center;
+         }
+
+         .header img {
+         border-radius: 50%;
+         height: 80px;
+         max-width: 100%;
+         float: left;
+           }
+
+          .search-bar {
+             float: right;
+           }
+
+           .search-bar input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+           }
+
+           .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #ddd;
+            }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+           text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .city {
+         display:none;
+        }
+
+    
+        .city.active {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 40px;
+        }
+    
+
+        .fun-facts {
+          width: 100%;
+          margin-top: 20px;
+          text-align: center;
+          background-color: #12141d;
+        }
+        
+
+        .column {
+          float: left;
+          width: 100%; /* Adjusted width for smaller screens */
+          box-sizing: border-box;
+          padding: 5px;
+        }
+
+        .column img {
+          width: 80%;
+          height: 200px;
+          border-radius: 8px;
+        }
+
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        @media (min-width: 600px) {
+          .column {
+            width: 33.33%; /* Three columns on larger screens */
+          }
+        }
+
+        .footer {
+          text-align: center;
+          background-color: #26262b;
+          padding: 10px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          color: white;
+        }
+        
+    </style>
+    <script>
+      function openCity(event, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("city");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].classList.remove("active");
+        }
+        var tablinks = document.querySelectorAll("nav a");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+  
+        document.getElementById(cityName).classList.add("active");
+        event.target.classList.add("active");
+        event.preventDefault();
+    }
+    </script>
+
+</head>
+<body>
+
+
+    <div class="header">
+        <img src="logo.png"/>
+        <h1>MeowMinds</h1>
+      </div>
+    
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutUs.html">About us</a>
+        <a href="behavior.html">Behavior</a>
+        <a href="healthIssues.html">Health Issues</a>
+        <a href="nutritions.html">Nutritions</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="grooming.html">Grooming</a>
+        <a href="careTips.html">Care Tips</a>
+        <a href="training.html">Training</a>
+        <div class="search-bar">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+
+     
+        <div class="fun-facts">
+          <h1 style="text-align: center; font-size: 60px;">WELCOME TO OUR WEBSITE</h1>
+          <p>Home is where a cat is <br> because she is so full of love 
+            and life <br> that she can spread happiness around you.</p>
+          <img src="1.jpg" alt="Home Image">
+          <h2 style="font-size: 50px;"> Fun facts about cats </h2>
+          <div class="row">
+            <div class="column">
+              <img src="13.jpg" alt=" Image"> 
+              <p>A cat’s back is extremely flexible because it has up to 53 <br>loosely fitting vertebrae. Humans only have 34 </p>
+            </div>
+            <div class="column">
+              <img src="20.jpg" alt="Image Cat">
+              <p>A cat’s eyesight is both better and worse than humans. <br>It is better because cats can see in much dimmer light<br>and they have a wider peripheral view. </p>
+            </div>
+            <div class="column">
+              <img src="19.jpg" alt="Image Cat one">
+              <p> On average, cats spend 2/3 of every day sleeping.<br>That means a nine-year-old cat has been awake for only three years of its life.</p>
+            </div>
+            <div class="column">
+              <img src="16.jpg" alt="Image Cat two">
+              <p>The normal body temperature of a cat is between 100.5 ° and 102.5 °F.<br> A cat is sick if its temperature goes below 100 ° or above 103 °F.</p>
+            </div>
+            <div class="column">
+              <img src="17.jpg" alt="Image Cat two">
+              <p>Foods that should not be given to cats include onions,<br> garlic, green tomatoes, raw potatoes, chocolate, grapes, and raisins.<br>Though milk is not toxic, it can cause an upset stomach and gas.</p>
+            </div>
+            <div class="column">
+              <img src="14.jpg" alt="Image Cat two">
+              <p> A cat rubs against people not only to be affectionate <br> but also to mark out its territory with scent glands around its face.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+      
+    
+     
+
+      
+    
+      <div class="footer">
+        <p>&copy;MeowMinds</p>
+      </div>
+      
+      </body>
+      
+      </html>
+      
+        

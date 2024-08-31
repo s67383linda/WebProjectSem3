@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meow Minds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            background-color: #12141d;
+        }
+
+       .header {
+            background-color: #333;
+            color: white;
+            padding: 15px; 
+            position: relative;
+            text-align: center;
+         }
+
+         .header img {
+         border-radius: 50%;
+         height: 80px;
+         max-width: 100%;
+         float: left;
+           }
+
+          .search-bar {
+             float: right;
+           }
+
+           .search-bar input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+           }
+
+           .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #ddd;
+            }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+           text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+                   
+                        * {
+                          box-sizing: border-box;
+                        }
+                        
+                        .column {
+                          float: left;
+                          width: 50%;
+                          padding: 50px;
+                        }
+                        
+                        .row::after {
+                          content: "";
+                          clear: both;
+                          display: table;
+                        }
+
+                        .footer {
+          text-align: center;
+          background-color: #26262b;
+          padding: 10px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          color: white;
+        }
+                        </style>
+                            <script>
+                              function openCity(event, cityName) {
+                                var i, tabcontent, tablinks;
+                                tabcontent = document.getElementsByClassName("city");
+                                for (i = 0; i < tabcontent.length; i++) {
+                                  tabcontent[i].classList.remove("active");
+                                }
+                                var tablinks = document.querySelectorAll("nav a");
+                                for (i = 0; i < tablinks.length; i++) {
+                                  tablinks[i].classList.remove("active");
+                                }
+                          
+                                document.getElementById(cityName).classList.add("active");
+                                event.target.classList.add("active");
+                                event.preventDefault();
+                            }
+                            </script>
+                        
+                        </head>
+                        <body>
+                        
+                        
+                            <div class="header">
+                                <img src="logo.png"/>
+                                <h1>MeowMinds</h1>
+                              </div>
+                            
+                              <nav>
+                                <a href="home.html">Home</a>
+                                <a href="aboutUs.html">About us</a>
+                                <a href="behavior.html">Behavior</a>
+                                <a href="healthIssues.html">Health Issues</a>
+                                <a href="nutritions.html">Nutritions</a>
+                                <a href="breeds.html">Breeds</a>
+                                <a href="grooming.html">Grooming</a>
+                                <a href="careTips.html">Care Tips</a>
+                                <a href="training.html">Training</a>
+                                <div class="search-bar">
+                                  <form action="/action_page.php">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                  </form>
+                                </div>
+                              </nav>
+                        </head>
+                        <body>
+                
+                        
+                            <div id="Health Issues">
+                                <div class="healthissues">
+                                    <div class="container">
+                                <h1 style="text-align: center; font-size: 60px;">Cat's Common Health Issues</h1>
+                        <p>Common health issues in cats include dental problems, obesity, urinary tract issues, hairballs, respiratory infections, parasites, diabetes, hyperthyroidism, allergies, and behavioral issues. 
+                            Regular veterinary check-ups, a balanced diet, proper grooming, and prompt attention to any changes in behavior are essential for maintaining a cat's well-being.</p>
+                        
+                        <div class="row">
+                          
+                         
+                          <div class="column">
+                           <h2 style="font-size: 40px; text-align: center;">Deases:</h2>
+                            <h3>Upper Respiratory Infections (URI):</h3>
+                                <p>Symptoms include sneezing, nasal discharge, and eye discharge.
+                                Caused by viruses like feline herpesvirus and calicivirus.</p>
+                                <br>
+                                <h3>Feline Leukemia (FeLV) and Feline Immunodeficiency Virus (FIV):</h3>
+                                <p>FeLV and FIV weaken the cat's immune system, making them vulnerable to infections.
+                                Spread through close contact with infected cats.</p>
+                                <br>
+                                <h3>Felne Infectious Peritonitis (FIP):</h3>
+                                <p>An immune-mediated disease caused by a coronavirus.
+                                Can affect the abdominal organs or the chest.</p>
+                                <br>
+                                <h3>Urinary Tract Infections (UTI):</h3>
+                                
+                                <p>Symptoms include frequent urination, straining, and blood in urine.
+                                Common in older cats, and can be influenced by diet and hydration.</p>
+                                <br>
+                                <h3>Diabetes Mellitus:</h3>
+                                
+                                <p>Insulin deficiency or resistance leading to high blood sugar.
+                                Symptoms include increased thirst, urination, and weight loss.</p>
+                                <br>
+                                <h3>Dental Problems:</h3>
+                                
+                                <p>Periodontal disease, gingivitis, and tooth resorption are common.
+                                Regular dental care is crucial to prevent these issues.</p>
+                                <br>
+                                <h3>Obesity:</h3>
+                                
+                                <p>Overweight cats are prone to various health issues, including diabetes and arthritis.
+                                A balanced diet and regular exercise are essential for weight management.</p>
+                                <br>
+                                <h3>Hyperthyroidism:</h3>
+                                
+                              <p>Overactive thyroid gland leading to increased metabolism.
+                                Symptoms include weight loss, increased appetite, and hyperactivity.</p>
+                                <br>
+                                <h3>Kidney Disease:</h3>
+                                
+                                <p>Common in older cats, causing gradual loss of kidney function.
+                                Symptoms include increased thirst, weight loss, and lethargy.</p>
+                                <br>
+                                <h3>Gastrointestinal Issues:</h3>
+                                
+                                <p>Inflammatory bowel disease (IBD) and gastroenteritis are common.
+                                Symptoms include vomiting, diarrhea, and weight loss.</p>
+                                <br>
+                                <h3>Parasites:</h3>
+                                
+                               <p>External parasites like fleas and ticks, as well as internal parasites like worms.
+                                Regular deworming and parasite prevention are crucial.</p>
+                                <br>
+                               <h3> Cancer:</h3>
+                                
+                                <p>Cats can develop various types of cancer, including lymphoma and mammary tumors.
+                                Early detection and veterinary care are vital for treatment.</p>
+</div>
+                               
+<div class="column">
+  <img src="cat1.jpg" alt="TREAT YOUR CATS" style="width:100%">
+  <img src="cat2.jpg" alt="TREAT YOUR CATS" style="width:100%">
+  <img src="cat3.jpg" alt="TREAT YOUR CATS" style="width:100%">
+  <img src="cat4.jpg" alt="TREAT YOUR CATS" style="width:100%">
+</div>
+
+                      
+                        </div>
+
+                        
+                        <div class="column">
+                          <img src="meow1.jpg" alt="TREAT YOUR CATS" style="width:100%">
+                          <img src="meow2.jpg" alt="TREAT YOUR CATS" style="width:100%">
+                          <img src="meow3.jpg" alt="TREAT YOUR CATS" style="width:100%">
+                          <img src="meow4.jpg" alt="TREAT YOUR CATS" style="width:100%">
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                             <h2 style="font-size: 40px; text-align: center;">Symptoms :</h2>
+                             <h3>Cats can exhibit various symptoms that may indicate different health issues. Here are some common cat symptoms and potential reasons for each:</h3>
+
+                                <h3>1.Vomiting:</h3>
+                                   <p>Possible Causes: Dietary indiscretion, hairballs, infections, toxins, or underlying health issues.</p>
+                              <br>
+                                <h3>2.Diarrhea:</h3>
+                                   <p>Possible Causes:Dietary changes, parasites, infections, allergies, or gastrointestinal issues.</p>
+                                   <br>
+                               <h3>3.Lethargy:</h3>
+                                  <p>Possible Causes:Illness, pain, stress, or underlying health problems.</p>
+                                  <br>
+                                <h3>4.Changes in Appetite:</h3>
+                                  <p>Possible Causes: Dental issues, digestive problems, kidney disease, or systemic illness.</p>
+                                  <br>
+                                <h3>5.Weight Loss:</h3>
+                                  <p>Possible Causes:Hyperthyroidism, diabetes, gastrointestinal issues, or dental problems.</p>
+                                  <br>
+                                <h3>6.Increased Thirst and Urination:</h3>
+                                  <p>Possible Causes:Diabetes, kidney disease, hyperthyroidism, or urinary tract issues.</p>
+                                  <br>
+                                <h3>7.Coughing or Sneezing:</h3>
+                                   <p>Possible Causes: Respiratory infections, allergies, or dental problems.</p>
+                                   <br>
+                                <h3>8.Difficulty Breathing:</h3>
+                                  <p>Possible Causes:Respiratory issues, heart problems, or lung diseases.</p>
+                                  <br>
+                                <h3>9.Changes in Behavior:</h3>
+                                   <p>Possible Causes:Stress, pain, or underlying health issues affecting behavior.</p>
+                                   <br>
+                                <h3>10.Scratching or Hair Loss:</h3>
+                                   <p>Possible Causes: Allergies, parasites, skin infections, or hormonal imbalances.</p>
+                                   <br>
+                                <h3>11.Eye Discharge or Redness:</h3>
+                                   <p>Possible Causes: Conjunctivitis, infections, or underlying eye issues.</p>
+                                   <br>
+                                <h3>12.Limping or Difficulty Moving:</h3>
+                                    <p>Possible Causes:Joint issues, injuries, or systemic illnesses affecting mobility.</p>
+                                    <br>
+                                <h3>13.Increased Vocalization:</h3>
+                                    <p>Possible Causes:Pain, anxiety, or cognitive issues, especially in older cats.</p>
+                                    <br>
+                                <h3>14.Seizures:</h3>
+                                    <p>Possible Causes:Epilepsy, toxins, or neurological disorders.</p>
+                                
+                            </div>
+                            
+                            </div>
+                      
+                          </div>
+                      
+                      
+                          </div>
+
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+
+                          
+    <div class="footer">
+      <p>&copy;MeowMinds</p>
+    </div>
+    
+    </body>
+    
+    </html>
+    

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meow Minds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            background-color: #12141d;
+        }
+
+       .header {
+            background-color: #333;
+            color: white;
+            padding: 15px; 
+            position: relative;
+            text-align: center;
+         }
+
+         .header img {
+         border-radius: 50%;
+         height: 80px;
+         max-width: 100%;
+         float: left;
+           }
+
+          .search-bar {
+             float: right;
+           }
+
+           .search-bar input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+           }
+
+           .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #ddd;
+            }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+           text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+
+        .img-container {
+             float: left;
+             width: 30%;
+             height: 30%;
+             padding-inline: 5px;
+        }
+
+
+        .clearfix::after {
+             content: "";
+             clear: both;
+             display: table;
+        }
+
+        .desc {
+            padding-inline: 30px;
+        }
+
+        .desc h1{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        desc p{
+            text-align: center;
+        }
+
+        .footer {
+          text-align: center;
+          background-color: #26262b;
+          padding: 10px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          color: white;
+        }
+        
+    </style>
+    <script>
+      function openCity(event, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("city");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].classList.remove("active");
+        }
+        var tablinks = document.querySelectorAll("nav a");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+  
+        document.getElementById(cityName).classList.add("active");
+        event.target.classList.add("active");
+        event.preventDefault();
+    }
+    </script>
+
+</head>
+<body>
+
+
+    <div class="header">
+        <img src="logo.png"/>
+        <h1>MeowMinds</h1>
+      </div>
+    
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutUs.html">About us</a>
+        <a href="behavior.html">Behavior</a>
+        <a href="healthIssues.html">Health Issues</a>
+        <a href="nutritions.html">Nutritions</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="grooming.html">Grooming</a>
+        <a href="careTips.html">Care Tips</a>
+        <a href="training.html">Training</a>
+        <div class="search-bar">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+
+      <h1 class="title">Cat's Breeds</h1>
+      <br>
+      <br>
+      <div class="clearfix">
+        <div class="img-container">
+        <img src="aegeancat.jpg" alt="Aegean Cat" style="width:100%; padding-left: 20px;">
+        </div>
+        <div class="desc">
+        <h1 style="text-align: center;">Aegean Cat</h1>
+        <p style="padding-inline: 200px; padding-right: 20px;">Aegean cats have a history that dates back thousands of years. They are believed to have originated in the Cycladic Islands.
+
+            Archaeological evidence suggests that these cats may have been domesticated about 10,000 years ago on the island of Cyprus, which is just off the coast of Greece. If it’s true that ancient people shared their lives with these felines, they are truly one of the oldest cat breeds in existence today.
+            
+            DNA evidence suggests that Aegean cats share common ancestry with the Angora and other Turkish cat breeds. It's likely that they found their way to Greece and islands throughout the Aegean Sea by hopping aboard the fishing and trading vessels that frequented the region.
+            
+            The Aegean cat has only been recognized as a unique cat breed since the 1990s – so it’s both a “new” cat breed and an ancient one! </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+        <div class="img-container">
+            <img src="Americanbobtail.jpg" alt="American Bobtail" style="width:100%; padding-left: 20px;">
+        </div>
+        <div class="desc">
+            <h1 style="text-align: center;">American Bobtail</h1>
+            <p style="padding-inline: 200px; padding-right: 20px;">The American Bobtail cat is a relatively new cat breed, having been developed in the 1960s using a feral brown tabby male with a naturally short tail and a seal point domestic female.
+
+                Although many cat breeds are formed using exclusively pedigreed cats as foundation stock, this breed stands out for its development through natural selection. The foundation stock was almost exclusively made up of feral domestic cats with natural bobtails.
+                
+                Several different breeders from different parts of the United States worked together to develop the American Bobtail cat as we know it. Even though the foundation cats had no known common heritage, they were all alike in type. The result is a strong, vibrant cat breed with a distinct appearance and no known genetic defects.
+                
+                The gene that gives the American Bobtail cat its signature shortened tail is dominant. This is an important difference between the American Bobtail cat and the Japanese Bobtail cat. The Japanese Bobtail cat has a recessive gene for its short tail.
+                
+                The International Cat Association (TICA) officially recognized the American Bobtail cat in 1989. Since then, the breed has been accepted for championship competition by the Cat Fanciers' Association (CFA). It is also sanctioned by the Cat Aficionado Association of China. The World Cat Federation recognizes the breed but does not accept it for competition.
+                
+                </p>
+        </div>
+    </div>
+            
+<br>
+<br>
+
+        <div class="clearfix">
+        <div class="img-container">
+        <img src="Cheetoh.jpg" alt="Cheetoh" style="width:100%; padding-left: 20px;">
+        </div>
+        <div class="desc">
+            <h1 style="text-align: center;">Cheetoh</h1>
+            <p style="padding-inline: 200px; padding-right: 20px;">Large, exotic, and active, Cheetoh cats are fun-loving individuals that crave attention from their families. They tend to get on well with everyone – other pets included!
+
+                These incredible cats have a wild appearance, even though they are eight generations removed from the wildcats that make up the breed's foundation. Don’t let that fool you though: They are dedicated lap cats, happy to curl up on the couch and enjoy some well-deserved time in front of the TV!
+                
+                Cheetoh cats can weigh more than 20 pounds. They are among the largest cat breeds ever developed, and as they’re relatively new, they are also among the rarest.</p>
+            </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <div class="img-container">
+        <img src="DragonLi.jpg" alt="Dragon Li" style="width:100%; padding-left: 20px;">
+        </div>
+        <div class="desc">
+        <h1 style="text-align: center;">Dragon Li</h1>
+        <p style="padding-inline: 200px; padding-right: 20px;">The Dragon Li is one of the oldest known cat breeds. In fact, these amazing felines are direct descendants of the Chinese Mountain cat (Felis bieti), a wild cat that is native to China. The breed has ancient roots, dating at least to the Xiang Dynasty.
+
+            Despite its venerable background, the Chinese Li Hua cat breed was only recently standardized. The breed was first shown at an event hosted by the Chinese Cat Aficionado Association in 2004, and is a fairly recent addition to the Cat Fanciers Association's list of accepted cat breeds. CFA granted the breed official recognition in 2010.
+            
+            Standardized, pedigreed representatives of the Dragon Li cat breed are still rare, making this feline one that can be difficult to obtain. It has attracted international interest.
+            
+            </p>
+        </div>
+     </div>
+    
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+      
+      
+      <div class="footer">
+        <p>&copy;MeowMinds</p>
+      </div>
+      
+      </body>
+      
+      </html>
+      
+        

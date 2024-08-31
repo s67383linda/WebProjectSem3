@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meow Minds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            background-color: #12141d;
+        }
+
+       .header {
+            background-color: #333;
+            color: white;
+            padding: 15px; 
+            position: relative;
+            text-align: center;
+         }
+
+         .header img {
+         border-radius: 50%;
+         height: 80px;
+         max-width: 100%;
+         float: left;
+           }
+
+          .search-bar {
+             float: right;
+           }
+
+           .search-bar input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+           }
+
+           .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #ddd;
+            }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+           text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            display: grid;
+            align-items: center; 
+            grid-template-columns: auto;
+            column-gap: 9px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 50px;
+        }
+
+
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+              user-select: none;
+        }
+
+        .next {
+             right: 0;
+             border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+              background-color: rgba(0,0,0,0.8);
+        }
+
+        .textslide {
+             color: #000000;
+             font-size: 20px;
+             text-shadow: #fdfdfd;
+             padding: 8px 12px;
+             position: absolute;
+             bottom: 8px;
+             width: 100%;
+             text-align: center;
+        }
+
+
+        .numbertext {
+             color: #f2f2f2;
+             font-size: 12px;
+             padding: 8px 12px;
+             position: absolute;
+             top: 0;
+        }
+
+        .dot {
+             cursor: pointer;
+             height: 15px;
+             width: 15px;
+             margin: 0 2px;
+             background-color: #bbb;
+             border-radius: 50%;
+             display: inline-block;
+             transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+             background-color: #717171;
+        }
+
+
+        .fade {
+             animation-name: fade;
+             animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+             from {opacity: .4} 
+             to {opacity: 1}
+        }
+
+
+        @media only screen and (max-width: 300px) {
+             .prev, .next,.text {font-size: 11px}
+        }
+
+        .footer {
+          text-align: center;
+          background-color: #26262b;
+          padding: 10px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          color: white;
+        }
+
+    </style>
+    <script>
+      function openCity(event, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("city");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].classList.remove("active");
+        }
+        var tablinks = document.querySelectorAll("nav a");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+  
+        document.getElementById(cityName).classList.add("active");
+        event.target.classList.add("active");
+        event.preventDefault();
+    }
+    </script>
+
+</head>
+<body>
+
+
+    <div class="header">
+        <img src="logo.png"/>
+        <h1>MeowMinds</h1>
+      </div>
+    
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutUs.html">About us</a>
+        <a href="behavior.html">Behavior</a>
+        <a href="healthIssues.html">Health Issues</a>
+        <a href="nutritions.html">Nutritions</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="gromming.html">Grooming</a>
+        <a href="careTips.html">Care Tips</a>
+        <a href="training.html">Training</a>
+        <div class="search-bar">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+<br>
+<br>
+
+<h1 class="title">DEFINITON</h1>
+<p style="padding-inline: 200px;">Good cat food is a type of nourishment that meets all the nutritional needs and requirements of cats.
+     It should contain high-quality protein (preferably from animal sources), healthy fats, carbohydrates and a balanced blend of vitamins and minerals.
+     Good cat food should also be free from harmful additives such as artificial preservatives, flavors, or colors.</p>
+<br>
+<br>
+
+<h1 class="title">IMPORTANCE</h1>
+<p style="padding-inline: 200px;"> The slideshow show a few importance
+about a good nutrition for a cat.</p>
+<br>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="cat01.jpg" style="width:100%">
+      <div class="textslide">Promoting Healthy Growth and Development</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="fat.jpg" style="width:100%">
+      <div class="textslide">Maintaining Optimum Weight</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="cat02.jpg" style="width:100%">
+      <div class="textslide">Promoting Digestive Health</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="cat03.jpg" style="width:100%">
+        <div class="textslide">Enhancing Their Quality of Life</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="cat04.jpg" style="width:100%">
+        <div class="textslide">Reducing The Risk of Chronic Diseases</div>
+    </div>
+      
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <br>
+
+    <h1 class="title">INGREDIENT OF GOOD CAT FOOD</h1>
+<br>
+    <h1 style="text-align: center;">Protein Sources</h1>
+    <p style="padding-inline: 200px;">As mentioned earlier, high-quality protein should be the first ingredient listed on your
+         cat’s food label. Chicken is one of the most common proteins found in commercial cat food because it is easily digestible
+         while providing all necessary amino acids required by felines’ bodies. Fish like salmon or tuna are also great sources of
+         protein for cats, containing healthy Omega-3 fatty acids.
+         Other protein sources include turkey, beef, lamb or pork. When choosing cat food with any of these proteins listed as the main ingredient,
+         ensure the protein is sourced from high-quality meat to avoid contamination or allergies.</p>
+    <br>
+    <h1 class="title">INGREDIENT OF GOOD CAT FOOD</h1>
+<br>
+    <h1 style="text-align: center;">Carbohydrates</h1>
+    <p style="padding-inline: 200px;">Cats don’t require a large amount of carbohydrates in their diet but they can provide energy and help
+         with digestion. The best carbohydrates for cats are easily digestible and don’t cause any upset stomachs. Rice is a common carbohydrate
+         source found in cat food that helps support digestive health by regulating bowel movements.
+         Corn and wheat are also good sources of carbohydrates but can lead to allergies for some cats. Barley is another good
+         carbohydrate source that’s high in fiber and provides slow-burning energy without raising blood sugar levels too quickly.</p>
+    <br>
+    <h1 style="text-align: center;">Fats</h1>
+    <p style="padding-inline: 200px;">Fats are an essential part of your cat’s diet as they provide energy and help with nutrient absorption.
+         Good sources of fat include animal fat or vegetable oil which contain Omega-6 fatty acids that promote healthy skin and coat.
+         Omega-3 fatty acids are also important as they can reduce inflammation throughout your cat’s body while supporting heart health.
+          Always aim to choose foods that contain healthy fats rather than unhealthy saturated fats which can contribute to weight gain, obesity and other health problems.</p>
+    <br>
+    <h1 style="text-align: center;">Vitamins and Minerals</h1>
+    <p style="padding-inline: 200px;">Vitamins and minerals are essential nutrients that every cat needs.
+         It’s important to check if the cat food you’re considering provides all necessary vitamins. Especially Vitamin A which supports vision health; B vitamins
+          (thiamine and riboflavin) which aid in metabolism; Vitamin D3 which helps with bone development; and Vitamin E which is an antioxidant that protects against cell damage.
+           Minerals like calcium are also crucial as they support bone development while phosphorus supports kidney function.
+           Zinc and iron are also important for maintaining a healthy immune system. When choosing cat food, make sure it contains all the necessary vitamins and minerals to support
+            your cat’s overall health. But be careful not to supplement excessively as too much of a nutrient can lead to adverse effects..</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+      <div class="footer">
+        <p>&copy;MeowMinds</p>
+      </div>
+      
+      </body>
+      
+      </html>
+      

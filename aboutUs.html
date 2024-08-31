@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meow Minds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: grey;
+            margin: 0;
+            padding: 0;
+            background-color: #12141d;
+        }
+
+       .header {
+            background-color: #333;
+            color: white;
+            padding: 15px; 
+            position: relative;
+            text-align: center;
+         }
+
+         .header img {
+         border-radius: 50%;
+         height: 80px;
+         max-width: 100%;
+         float: left;
+           }
+
+          .search-bar {
+             float: right;
+           }
+
+           .search-bar input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+           }
+
+           .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #ddd;
+            }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+           text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        header {
+     width: 100%;
+     height: 100%;
+     background-color: #12141d;
+     color: white;
+      }
+
+         .container {
+          width: 1200px;
+          margin: auto;
+          text-align: center;
+          padding-top: 5px;
+          }
+
+         .container h3 {
+         color: #ff7159;
+          }
+
+          .container h1 {
+          font-size: 50px;
+           }
+
+          .row_one{
+         display: flex;
+        justify-content: space-between;
+         align-items: center;
+        padding-top: 50px;
+         }
+
+       .row_one .box {
+        width: 350px;
+        height: 600px;
+        background-color: #1e2029;
+        border-radius: 10px;
+        padding: 20px;
+       cursor: pointer;
+       }
+
+       .row_one .box img{
+        width: 200px;
+        border-radius: 100%;
+        margin-top: 10px;
+       }
+
+      .row_one .box h2 {
+      padding-top: 10px;
+      font-size: 20px;
+      cursor: pointer;
+       }
+
+       .row_one .box h4 {
+        padding-top: 10px;
+        color: grey;
+        font-size: 18px;
+        }
+
+        .row_one .box h5{
+         padding-top: 10px;
+         font-size: 16px;
+         color: grey;
+         }
+       
+         .row_one .box h6 {
+        padding-top: 5px;
+        color: grey;
+        font-size: 18px;
+        }
+
+        .footer {
+          text-align: center;
+          background-color: #26262b;
+          padding: 10px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          color: white;
+        }
+        
+    </style>
+    <script>
+      function openCity(event, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("city");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].classList.remove("active");
+        }
+        var tablinks = document.querySelectorAll("nav a");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+  
+        document.getElementById(cityName).classList.add("active");
+        event.target.classList.add("active");
+        event.preventDefault();
+    }
+    </script>
+
+</head>
+<body>
+
+
+    <div class="header">
+        <img src="logo.png"/>
+        <h1>MeowMinds</h1>
+      </div>
+    
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutUs.html">About us</a>
+        <a href="behavior.html">Behavior</a>
+        <a href="healthIssues.html">Health Issues</a>
+        <a href="nutritions.html">Nutritions</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="grooming.html">Grooming</a>
+        <a href="careTips.html">Care Tips</a>
+        <a href="training.html">Training</a>
+        <div class="search-bar">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+
+
+      <header>
+        <div id="About us">
+          <div class="container">
+          <h3>Reach Our Team</h3>
+           <h1>MeowMinds Company</h1>
+           <p>Who to contact?</p>
+           <div class="row_one">
+           <div class="box">
+           <img src="atin.jpg">
+           <h2>Siti Farzana</h2>
+           <h4>Founder</h4>
+           <h5>+6017 531 1365</h5>
+           <h6>S66413@ocean.umt.edu.my</h6>
+      </div>
+         <div class="box">
+           <img src="ry.jpg">
+            <h2>Nur Arina</h2>
+             <h4>Founder</h4>
+           <h5>+6011 5504 0472</h5>
+             <h6>S65361@ocean.umt.edu.my</h6>
+          </div>
+    <div class="box">
+      <img src="linda.jpg">
+       <h2>NurHaslinda</h2>
+       <h4>Account Manager</h4>
+    <h5>+6019 517 0241</h5>
+        <h6>S67383@ocean.umt.edu.my</h6>
+     </div>
+   </div>  
+  </div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    
+      <div class="footer">
+        <p>&copy;MeowMinds</p>
+      </div>
+      
+      </body>
+      
+      </html>
+      
+        
